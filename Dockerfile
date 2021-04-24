@@ -15,4 +15,4 @@ EXPOSE 2812
 EXPOSE 25565
 
 # Définir la commande de démarrage
-ENTRYPOINT [ "/bin/bash" ]
+ENTRYPOINT [ "/srv/cloudnet/start.sh" ]
