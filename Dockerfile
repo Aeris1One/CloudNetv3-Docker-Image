@@ -6,6 +6,9 @@ RUN apt-get update -y && apt-get install -y default-jre screen wget curl unzip
 # Ajouter CloudNet dans le container
 ADD . /usr/local/
 
+# Corriger les permissions
+RUN chmod +x /usr/local/start.sh
+
 # Exposer les ports
 EXPOSE 1410
 EXPOSE 2812
